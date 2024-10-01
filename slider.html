@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+	<title>slider</title>
+	  <style>
+    html,
+    body {
+      height: 100%;
+			margin: 0;
+			padding: 0;
+    }
+
+    body {
+      display: flex;
+			justify-content: center;
+			align-items: center;
+    }
+
+    body .wrap {
+      flex-grow: 1;
+			min-width: 0;
+    }
+
+		.slider-wrap {
+			padding-bottom: 2rem;
+		}
+
+		.swiper-slide {
+			display: flex;
+		}
+
+		.swiper-slide img {
+			vertical-align: top;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+
+  </style>
+</head>
+<body>
+
+	<div class="wrap">
+		<div class="slider-wrap swiper">
+			<div class="slider swiper-wrapper">
+				<div class="slider-item swiper-slide"><img src="/slider-img/10.jpg" alt=""></div>
+				<div class="slider-item swiper-slide"><img src="/slider-img/11.jpeg" alt=""></div>
+				<div class="slider-item swiper-slide"><img src="/slider-img/2.webp" alt=""></div>
+				<div class="slider-item swiper-slide"><img src="/slider-img/245844.jpg" alt=""></div>
+				<div class="slider-item swiper-slide"><img src="/slider-img/5.jpg" alt=""></div>
+				<div class="slider-item swiper-slide"><img src="/slider-img/8.jpg" alt=""></div>
+				<div class="slider-item swiper-slide"><img src="/slider-img/9.jpg" alt=""></div>
+				<div class="slider-item swiper-slide"><img src="/slider-img/10.jpg" alt=""></div>
+				<div class="slider-item swiper-slide"><img src="/slider-img/11.jpeg" alt=""></div>
+				<div class="slider-item swiper-slide"><img src="/slider-img/245844.jpg" alt=""></div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script>
+    var swiper = new Swiper(".swiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+			centeredSlides: true,
+			speed: 1000,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+</body>
+</html>
